@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/webp" href="icone.webp">
-    <link rel="shortcut icon" href="icone.webp">
+    <link rel="shortcut icon" href="logo.webp" >
     <title>Informática e Meio Ambiente</title>
     
     <style>
@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             background-color: #eaf7ea;
-            color: #2f4f2f;
+            color: #223022;
             overflow: hidden; /* Impede a rolagem enquanto a animação ocorre */
         }
         header {
@@ -49,7 +49,7 @@
             color: #1e5631;
         }
         footer {
-            background-color: #1e5631;
+            background-color:  #1e5631;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -63,7 +63,7 @@
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -59%);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -74,7 +74,8 @@
         .animation-container img {
             width: 100px;
             height: 100px;
-            animation: bounce 1.5s infinite;
+            animation: bounce 1.8s infinite;
+            left: 59%;
         }
 
         /* Camada de ofuscação do fundo */
@@ -84,7 +85,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Branco semitransparente */
+            background-color: rgba(255, 255, 255, 0.795); /* Branco semitransparente */
             z-index: 9998; /* Fica atrás da animação da folha */
             display: none; /* Inicialmente invisível */
         }
@@ -127,6 +128,7 @@
 </head>
 <body>
     <header>
+        
         <h1>Informática e Meio Ambiente</h1>
         <p>Como a tecnologia pode impactar e proteger o meio ambiente</p>
     </header>
@@ -158,32 +160,6 @@
         <p>&copy; 2025 Informática e Meio Ambiente. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Camada de ofuscação -->
-    <div class="background-overlay" id="background-overlay"></div>
-
-    <!-- Animação da folha -->
-    <div class="animation-container" id="animation-container">
-        <img src="icone.webp" alt="Ícone da folha" id="leaf-icon">
-        <div class="speech-bubble" id="speech-bubble">
-            Bem-vindo ao site de Informática e Meio Ambiente...<br>
-            Neste site, iremos falar sobre os impactos positivos e negativos que a informática traz para a natureza, e suas soluções.
-        </div>
-    </div>
-
-    <script>
-        window.onload = function() {
-            // Mostrar a animação e a camada de ofuscação ao carregar a página
-            const animationContainer = document.getElementById('animation-container');
-            const backgroundOverlay = document.getElementById('background-overlay');
-            animationContainer.style.display = 'flex';
-            backgroundOverlay.style.display = 'block'; // Mostra a camada de ofuscação
-
-            // Tempo para ocultar a animação e a camada de ofuscação após 10 segundos
-            setTimeout(function() {
-                animationContainer.style.display = 'none';
-                backgroundOverlay.style.display = 'none'; // Oculta a camada de ofuscação
-            }, 10000); // 10 segundos
-        }
-    </script>
+    
 </body>
 </html>
